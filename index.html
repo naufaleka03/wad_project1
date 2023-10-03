@@ -13,54 +13,100 @@
             text-align: center;
             clear: both;
         }
+        
+        img {
+            border-radius: 10%;
+        }
+
+        .biodata {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .pendidikan {
+            display: flex;
+            justify-content: center;
+        }
 
         li {
             font-weight: lighter;
         }
+
+        .skill {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        .programming {
+            background-color:#C4A484;
+            border-radius: 10%;
+            margin: 10px;
+            padding-right: 40px;
+        }
+
+        .softskill {
+            background-color:#C4A484;
+            border-radius: 10%;
+            margin: 10px;
+            padding-right: 15px;
+        }
     </style>
 </head>
 <body style="background-color: beige;">
-    <h1 style="font-family: Helvetica, sans-serif; font-size: 40px; padding: 25px; background-color: #964B00;">Portofolio Curriculum Vitae Naufal</h1>
+    <h1 style="font-family: Helvetica, sans-serif; font-size: 40px; padding: 25px; background-color: #964B00; text-align: center;">Portofolio Curriculum Vitae Naufal</h1>
     <hr />
+
     <h2 style="font-family: Helvetica, sans-serif; font-size: 25px;">Biodata</h2>
-    <img src="./foto_Naufal.jpg" alt="Foto saya" width="150px" style="margin: 45px; display: float; float: left; "/>
-    <ul style="list-style: none;">
-        <li><p>Nama Lengkap: Naufal Eka Prasetya</p></li>
-        <li><p>Umur: 20 tahun</p></li>
-        <li><p>Tempat/tanggal lahir: Bekasi, 23 April 2003</p></li>
-        <li><p>email: naufaleka03@gmail.com</p></li>
-    </ul>
+
+    <div class="biodata">
+        <img src="./foto_Naufal.jpg" alt="Foto saya" width="150px" style="margin: 30px;"/>
+        <ul style="list-style: none;">
+            <li><p>Nama Lengkap: Naufal Eka Prasetya</p></li>
+            <li><p>Umur: 20 tahun</p></li>
+            <li><p>Tempat/tanggal lahir: Bekasi, 23 April 2003</p></li>
+            <li><p>email: naufaleka03@gmail.com</p></li>
+        </ul>
+    </div>
 
     <br />
 
-    <table border="1px">
-        <tr>
-          <th>Pendidikan</th>
-          <th>Tahun</th>
-        </tr>
-        <tr>
-          <td>SMA Negeri 11 Bekasi</td>
-          <td>2018-2021</td>
-        </tr>
-        <tr>
-          <td>Telkom University</td>
-          <td>2021-Sekarang</td>
-        </tr>
-      </table>
+    <div class="pendidikan">
+        <table border="1px">
+            <tr>
+            <th>Pendidikan</th>
+            <th>Tahun</th>
+            </tr>
+            <tr>
+            <td>SMA Negeri 11 Bekasi</td>
+            <td>2018-2021</td>
+            </tr>
+            <tr>
+            <td>Telkom University</td>
+            <td>2021-Sekarang</td>
+            </tr>
+        </table>
+    </div>
 
     <br />
-
-    <h2>Paragraf Karakter (Tentang diriku)</h2>
-    <p>Saat ini, aku adalah seorang mahasiswa di jurusan S1 Sistem Informasi.
-        Aku selalu mengadopsi sikap konsisten, gigih, dan suka belajar akan hal baru.
-    </p>
     
+    <div class="aboutme">
+        <h2>Paragraf Karakter (Tentang diriku)</h2>
+        <p style="text-align: center;">Saat ini, aku adalah seorang mahasiswa di jurusan S1 Sistem Informasi.
+            Aku selalu mengadopsi sikap konsisten, gigih, dan suka belajar akan hal baru.
+        </p>
+    </div>
+
     <br />
 
     <h2 style="font-family: Helvetica, sans-serif; text-align: center;">Skill</h2>
-    <ol style="font-family: Helvetica, sans-serif;">
-        <li style="font-weight: bold;">Programming
-            <ul>
+
+    <div class="skill">
+        <div class="programming">    
+            <ul style><h3>Programming</h3>
                 <li>Python</li>
                 <li>Java</li>
                 <li>HTML</li>
@@ -69,12 +115,15 @@
                 <li>React.JS</li>
                 <li>MongoDB</li>
             </ul>
-        </li>
-        <li style="font-weight: bold;">Softskill</li>
-            <ul>
+        </div>
+
+        <div class="softskill">
+            <ul><h3>Softskill</h3>
                 <li>English</li>
                 <li>Fast typing</li>
+                <li>Communication</li>
             </ul>
-    </ol>
+        </div>
+    </div>
 </body>
 </html>
